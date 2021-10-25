@@ -11,7 +11,7 @@ def Password ():
             char.append(chr(random.randint(97,122))) 
         continue
 
-    print ("Characters Recieved....") 
+    print ("Characters Received....") 
     
     random.shuffle(char) 
     
