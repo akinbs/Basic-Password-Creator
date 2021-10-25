@@ -1,0 +1,21 @@
+import random 
+char =[]
+def Password ():
+    
+    while len(char) <= 5:
+        if len(char) <= 2:
+            char.append(chr(random.randint(65,90))) 
+        elif 2 < len(char) <= 4:
+            char.append(chr(random.randint(48,57))) 
+        elif 4 < len(char) <= 6:
+            char.append(chr(random.randint(97,122))) 
+        continue
+
+    print ("Characters Recieved....") 
+    
+    random.shuffle(char) 
+    
+    print("Password:"+' '+char[0]+char[1]+char[2]+char[3]+char[4]+char[5])
+
+         
+Password()
